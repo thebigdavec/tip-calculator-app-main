@@ -98,6 +98,9 @@ form {
   background-color: var(--light-muted);
   align-self: end;
 }
+.display button:hover {
+  background-color: var(--light);
+}
 label {
   cursor: pointer;
 }
@@ -112,6 +115,9 @@ input[type='radio'] + label {
   text-align: center;
   padding: 0.2em 1.5em;
   border-radius: 5px;
+}
+input[type='radio'] + label:hover {
+  background-color: var(--dark-muted);
 }
 input[type='radio']:checked + label {
   background-color: var(--light-muted);
@@ -130,6 +136,7 @@ input[type='number'] {
 input[type='number']:invalid {
   border-color: red;
 }
+
 .input-placeholder {
   position: absolute;
   font-size: 0.9em;
